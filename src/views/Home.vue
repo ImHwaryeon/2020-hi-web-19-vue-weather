@@ -1,13 +1,19 @@
 <template lang="pug">
   .home-wrapper 
-    h1 HOME
+    .title-wrapper
+      h1 Vue를 활용한 날씨정보 앱
+        small.ml-3 vl.0
+    Search
 </template>
 <script>
+import Search from '../components/Search.vue'
+
 export default {
-  name: 'Home'
+  name: 'Home',
+  components : {Search}
 }
 </script>
-<style lang="scss" scoped>
+<style lang="scss" scoped></style>
 	@import '@/assets/scss/_mixins';
   .home-wrapper{
     text-align: center;
