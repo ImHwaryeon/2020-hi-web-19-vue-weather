@@ -13,8 +13,7 @@ export default {
   components : {Search}
 }
 </script>
-<style lang="scss" scoped></style>
-	@import '@/assets/scss/_mixins';
+<style lang="scss" scoped>
   .home-wrapper{
     text-align: center;
   }
