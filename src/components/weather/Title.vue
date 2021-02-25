@@ -1,17 +1,17 @@
 <template lang="pug">
 	.wrapper
-		span.name {{name}},
-		span.country {{country}}
+		span.name {{value.name}}, 
+		span.country {{value.country}}
 </template>
 <script>
 export default {
 	name: 'Title',
-	props: ['name', 'country'],
+	props: ['value'],
 }
 </script>
 <style lang="scss" scoped>
 	.wrapper {
-		.name{
+		.name {
 			font-size: 1.5em;
 		}
 		.country {

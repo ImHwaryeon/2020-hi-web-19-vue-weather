@@ -7,26 +7,26 @@ import axios from 'axios'
 
 export default {
 	name: 'Search',
+	props: ['action', 'selCity'],
 	async created() {
 		const r = await axios.get('/json/city.json')
 		this.city = r.data.map((v) => {
 			v.text = v.name
 			v.value = v.id
-			return v;
+			return v
 		});
-		this.city.unshift({value: null, text: '도시를 선택하세요.'});
-		this.app_id = VUE_APP_ID
+		this.city.unshift({value: null, text: '현재위치'})
+		this.selected = this.selCity || null
 	},
 	watch: {
-		selected: function(nv, ov) {
-			this.$store.dispatch('ACT_CITY', nv)
+		selected: function(nv) {
+			this.$store.dispatch(this.action, nv)
 		}
 	},
 	data() {
 		return {
-			selected: null,
+			selected: '',
 			city: [],
-			app_id: ''
 		}
 	}
 }

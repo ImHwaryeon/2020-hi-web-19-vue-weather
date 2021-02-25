@@ -1,5 +1,5 @@
 <template lang="pug">
-	footer.footer-wrapper Copyright &copy;booldook. Allright Reserved.
+	footer.footer-wrapper Copyright &copy;hwaryeon. Allright Reserved.
 </template>
 <script>
 export default {

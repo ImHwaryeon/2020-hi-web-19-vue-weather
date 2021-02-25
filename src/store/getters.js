@@ -5,7 +5,10 @@ export default {
 	GET_DAILY(state) {
 		return state.daily
 	},
-	GET_GEO(state) {
-		return state.geo
+	GET_DAYS(state) {
+		return state.days
+	},
+	GET_LOADING(state) {
+		return state.isLoading
 	}
 }
