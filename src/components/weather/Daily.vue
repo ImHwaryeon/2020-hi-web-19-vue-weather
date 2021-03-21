@@ -82,8 +82,11 @@ export default {
 <style lang="scss" scoped>
 	.wrapper-daily {
 		.Title {
+			display: inline-block;
 			font-size: 1.25em;
-			border-bottom: 2px solid $colorLighter;
+			padding: 0 0.25em;
+			border-bottom: 1px solid $colorLight;
+			margin: auto;
 		}
 		.Time {
 			margin-bottom: 1em;
